@@ -1,14 +1,91 @@
+/* ======================== 
+   1. Gaya Dasar (Body)
+   ======================== */
 body {
-    background-color: #FFFFE0; /* Warna kuning cerah */
-    font-family: Arial, sans-serif; /* Jenis huruf yang bersih dan mudah dibaca */
-    color: #191970; /* Warna teks utama (Biru Gelap) */
+    background-color: #FFFFE0; /* Warna kuning muda pucat */
+    font-family: Arial, sans-serif; 
+    color: #1a1a1a; /* Warna teks yang lebih gelap dari Biru Gelap */
+    display: flex; /* Untuk menengahkan kartu di halaman */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
+/* ======================== 
+   2. Gaya Kartu Profil
+   ======================== */
 .kartu-profil {
-    width: 300px;
-    margin: 50px auto; /* 50px jarak atas/bawah, auto menengahkan kiri/kanan */
-    padding: 20px;
+    width: 320px; /* Sedikit lebih lebar agar lebih proporsional */
+    padding: 30px;
     background-color: white;
-    border-radius: 15px; /* Membuat sudut menjadi melengkung */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Efek bayangan */
+    border-radius: 20px; /* Sudut lebih melengkung */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Efek bayangan lebih menonjol */
+    text-align: center;
+}
+
+/* ======================== 
+   3. Gaya Gambar
+   ======================== */
+.foto-profil {
+    width: 100%; /* Lebar 100% dari kontainer kartu */
+    max-width: 250px; /* Batasi lebar maksimum */
+    height: auto;
+    border-radius: 10px; /* Sudut gambar sedikit melengkung */
+    margin-bottom: 20px;
+    /* Efek untuk membuatnya tampak diangkat */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* ======================== 
+   4. Gaya Teks dan Judul
+   ======================== */
+h1 {
+    color: #191970; /* Warna Biru Gelap untuk judul */
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #444;
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/* ======================== 
+   5. Gaya Interaksi (Tautan & Tombol)
+   ======================== */
+.interaksi {
+    display: flex;
+    justify-content: space-around; /* Memberi ruang di antara tautan dan tombol */
+    align-items: center;
+}
+
+.link-instagram {
+    color: #007bff; /* Warna biru standar untuk tautan */
+    text-decoration: none; /* Menghapus garis bawah default */
+    font-weight: bold;
+    font-size: 0.9em;
+    padding-right: 15px; /* Sedikit ruang agar tidak terlalu dekat dengan tombol */
+}
+
+.link-instagram:hover {
+    text-decoration: underline;
+}
+
+.btn-sapa {
+    background-color: #f0f0f0; /* Latar belakang abu-abu muda */
+    color: #1a1a1a;
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.btn-sapa:hover {
+    background-color: #ddd;
 }
